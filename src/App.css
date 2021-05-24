@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("./covid_image_project.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.app_left {
+  flex: 0.8;
+}
+
+.app_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.app_right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app_graph {
+  flex-grow: 1;
+}
+
+.app_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app_info {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.style_drop {
+  font-weight: bolder !important;
+  color: aliceblue !important;
+  border: 2px solid aliceblue;
+}
+
+@media (max-width: 900px) {
+  .App {
+    flex-direction: column;
+  }
+}
